@@ -1,0 +1,27 @@
+name: Clean Laggy Transitions in CSS
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'css/style.min.css'
+
+jobs:
+  clean-css:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Clean Laggy Transitions from style.min.css
+        run: |
+          mkdir -p cleaned
+          # Remove laggy transitions from style.min.css and output as style-clean.css
+          sed -E '/transition[^;{]*(:|[ ])(width|height|margin|padding)/d' css/style.min.css > cleaned/style-clean.css
+
+      - name: Upload cleaned CSS as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: style-clean.css
+          path: cleaned/style-clean.css
