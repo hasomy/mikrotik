@@ -1,0 +1,344 @@
+﻿<!doctypehtml>
+    <html lang="ar">
+    <meta charset="UTF-8">
+    <title data-network-name>شبكة{{network-name}} اللاسلكيه</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#1e6198">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/fontello.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <style>
+        .img1::before {
+            content: "خدمة دائمة ";
+        }
+
+        .img2::before {
+            content: "سرعة في النت";
+        }
+
+        .img3::before {
+            content: "بث مباشر للمباريات";
+        }
+
+        .img4::before {
+            content: "وقت أستخدام أطول";
+        }
+
+        .img5::before {
+            content: "الأسرع و الأفضل ";
+        }
+    </style>
+
+    <body translate="no">
+        <div class="bk"></div>
+        <div class="container">
+            <div class="error-container">
+                <div class="error">
+                    <div class="fade-in">
+                        <p id="error">
+                    </div>
+                </div>
+            </div>
+            <div class="data" data-show-date-field><span hot-date></span>,الموافق <span hot-hijri-date></span></div>
+            <div class="screen">
+                <div class="screen-content">
+                    <div class="login" id="login" style="visibility: hidd;">
+                        <section class="section">
+                            <p class="marquee" data-news-line>{{news-line}}
+                        </section>
+                        <h1 class="network-name"></h1>
+                        <div class="screen-background-shape screen-background-shape6"><img src="img/logo.svg"
+                                width="80px"  style="margin-left: -40px;" alt="">
+                            <h1 class="hi">شبكة<br> الانصار نت </h1>
+                        </div>
+                        <form class="login-form" name="login">
+                           
+                            <h4>قم ب تسجيل الدخول</h4><span class="screen-background-shape screen-background-shape0">
+                                <div style="position: relative ;" class="ads">
+                                    <div class="box" id="adsbox">
+                                        <span style="--i:1">
+                                            <div class="img1 img"></div>
+                                        </span>
+                                        <span style="--i:2">
+                                            <div class="img2 img"></div>
+                                        </span>
+                                        <span style="--i:3">
+                                            <div class="img3 img "></div>
+                                        </span>
+                                        <span style="--i:4">
+                                            <div class="img4 img"></div>
+                                        </span>
+                                        <span style="--i:5">
+                                            <div class="img5 img"></div>
+                                        </span>
+                                        <span style="--i:6">
+                                            <div class="img1 img"></div>
+                                        </span>
+                                        <span style="--i:7">
+                                            <div class="img2 img"></div>
+                                        </span>
+                                        <span style="--i:8">
+                                            <div class="img3 img"></div>
+                                        </span>
+                                        <span style="--i:9">
+                                            <div class="img4 img"></div>
+                                        </span>
+                                        <span style="--i:10">
+                                            <div class="img5 img"></div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </span>
+                            <div class="login-field"><i class="login-icon fas icon-user"></i><input name="username"
+                                    class="login-input" placeholder="ادخل رقم الكرت هنا" username-field improve-input
+                                    autocomplete="off"><select name="" id="se"></select></div>
+                            <div class="login-field password-field"><i class="login-icon fas icon-lock"></i><input
+                                    type="hidden" name="password" class="login-input" placeholder="ادخل كلمة السر هنا"
+                                    improve-input></div>
+                            <div class="speed-form">
+                                <div class="speed-icon"></div><select id="speed" name="domain" speed-field>
+                                    <option value="" selected disabled hidden>أختر سرعتك </option>
+                                    <option value="128K/512K">سرعة اقتصادية</option>
+                                    <option value="512Kloan-icon/2048K"> سرعة متوسطة</option>
+									<option value="2048K/8192K">سرعة عالية جدا </option>
+
+                                </select>
+                            </div>
+                            <div class="togswith">
+                                <div class="btnu">
+                                    <div>
+                                        <div>
+                                            <h3>ايقاف التحديثات</h3>
+                                        </div>
+                                        <div class="hswitch"><input id="chupdate" value=""
+                                                class="hcb" type="checkbox"><label
+                                                for="chupdate"></label>
+                                            <span class="htoggle">
+                                                <span class="hleft">لا </span>
+                                                <span class="hright">نعم </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><button class="button login-submit" parent-id="status" enable-hot-cookie><span
+                                    class="button-text">تسجيل الدخول</span></i></button>
+                            <div class="social-login">
+                                <div><button class="tbtn" parent-id="loan" data-loan-button>أدارة الشبكة
+                                    </button>
+                                    
+                                    <button class="tbtn" parent-id="sell-point"
+                                        data-sell-point-button>نقاط البيع 
+                                    
+                                        <button class="tbtn" parent-id="price"
+                                        data-sell-point-button>الأسعار  
+                                    </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="app" id="price">
+                        <div class="sell-point-div">
+                            <div class="wrapper">
+                                <p class="title"> الاسعار  
+                                <table> <tr>
+                                    <th>الفئة
+                                    </th>
+                                    <th>الوقت
+                                    </th>
+                                    <th>الرصيد
+                                    </th>
+                                    <th>الصلاحية
+                                    </th>
+                                </tr>  <tr>
+                                    <td>100 ريال</td>
+                                    <td>24 ساعات</td>
+                                    <td>400 ميجا</td>
+                                    <td>3 ايام</td>
+                                </tr>
+                                <tr>
+                                    <td>200 ريال</td>
+                                    <td>72 ساعة</td>
+                                    <td>800 ميجا</td>
+                                    <td>7 ايام</td>
+                                </tr>
+                                <tr>
+                                    <td>250 ريال</td>
+                                    <td>72 ساعة</td>
+                                    <td>1 جيجا</td>
+                                    <td>7 ايام</td>
+                                </tr>
+                                <tr>
+                                    <td>500 ريال</td>
+                                    <td>7 ايام </td>
+                                    <td>2 جيجا </td>
+                                    <td>7 ايام </td>
+                                </tr>
+								  <tr>
+                                    <td>1000 ريال</td>
+                                    <td>15 ايام </td>
+                                    <td>5 جيجا </td>
+                                    <td>15 ايام </td>
+                                </tr>
+								 <tr>
+                                    <td>3000 ريال</td>
+                                    <td>30 ايام </td>
+                                    <td>15 جيجا </td>
+                                    <td>30 ايام </td>
+                                </tr>
+                                    <tbody class="sell-point" id="sell-points">
+                                </table><button class="app-logout button app-submit">رجوع</button><br>
+                            </div>
+                            <p>للتواصل والاستفسار: 770977933</p>
+                        </div>
+                        <div class="social-login"></div>
+                    </div>
+
+
+                    <div class="app" id="sell-point">
+                        <div class="sell-point-div">
+                            <div class="wrapper">
+                                <p class="title">نقاط البيع
+                                <table>
+                                    <tr>
+                                        <td>جميع البقالات في محيط الشبكة </td>
+                                    </tr>
+                                    <tbody class="sell-point" id="sell-points">
+                                </table><button class="app-logout button app-submit">رجوع</button><br>
+                            </div>
+                            <p>للتواصل والاستفسار: 770977933</p>
+                        </div>
+                        <div class="social-login"></div>
+                    </div>
+                    <div class="app" id="status">
+                        <div class="status-div">
+                            <div class="wrapper">
+                                <p class="title" id="status-title">تم تسجيل دخولك بنجاح!
+                                <p>إذا لم يتم الأتصال تلقائيا أضغط <a
+                                        style="text-decoration: none; color: #fff; padding: 5px;border: 1px solid; border-radius: 10px;"
+                                        href="status.html">هنا</a></p><br>
+                                <div class="logobar">
+                                   <!--  <div class="logoth"><a href="http://10.10.10.10/" target="_blank"><img
+                                                src="img/m.svg">الاستراحة</a></div> -->
+                                    <div class="logoimg"><a href="live/index.html" target="_blank"><img
+                                                src="img/l.svg">البث المباشر</a></div>
+                                </div><br><br>
+                                <div class="suchange">
+                                    <div class="speeds">
+                                        <p>سرعة الكرت</p>
+                                        <p id="sspeed">سرعة عادية </p><select id="speedchange" class="tcs">
+                                            <option value="ns" disabled hidden selected>تغيير </option>
+                                        </select>
+                                    </div>
+                                    <div class="updatec">
+                                        <p>التحديثات </p>
+                                        <p id="update">تم تفعيلها </p><select id="updatechange" class="tcs">
+                                            <option value="ns" disabled hidden selected>تغيير </option>
+                                            <option value="">تفعيل التحديثات </option>
+                                            <option value="_Uoff">أيقاف التحديثات</option>
+                                            <option value="cancel">إلغاء</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <p class="title">معلومات الكرت</p><br>
+                                <table>
+                                    </tr>
+                                    <td>التنزيل
+                                    <td id="bytes_out">
+                                        <tr>
+                                            <td style="width: 100px;">الرفع
+                                            <td id="bytes_in">
+                                        <tr remain_bytes_total>
+                                            <td style="width: 100px;">التحميل المتبقي
+                                            <td id="remain_bytes_total">مفتوح
+                                        <tr>
+                                            <td style="width: 100px;">الوقت المستهلك
+                                            <td id="uptime">
+                                        <tr session_time_left>
+                                            <td style="width: 100px;">الوقت المتبقي
+                                            <td id="session_time_left">مفتوح
+                                </table><br><br><a href="https://wa.me/967770977933"
+                                    style="text-decoration: none;color:#721616 ;">
+                                    <div
+                                        style="justify-content: center; align-items: center; display: flex;height: 50px; margin: 10px;">
+                                        <h2 style="display: inline-block; direction: ltr;">+967770977933 </h2><img
+                                            src="img/w.svg" width="60px" alt="">
+                                    </div>
+                                </a><br><br><button class=" login-submit app-logout" erase-cookie clear-hot-cookie>تسجيل
+                                    الخروج</button><br><button class="login-submit app-logout">قطع
+                                    الاتصال</button><br><br><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app" id="block">
+                        <div class="status-div">
+                            <div class="wrapper">
+                                <p class="title">انت محظور
+                                <div style="padding: 25px">
+                                    <p class="contact-text">لقد تم حظرك بسبب محاولات تسجيل الدخول الكثيرة الخاطئة
+                                    <div class="app-user"><span>بقي على فك الحظر: </span><span count-down-span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-login"><a href="https://wa.me/967770977933"
+                                style="text-decoration: none;color:#165072 ;">
+                                <div
+                                    style="justify-content: center; align-items: center; display: flex;height: 50px; margin: 10px;">
+                                    <h2 style="display: inline-block; direction: ltr;">+967770977933 </h2><img
+                                        src="img/w.svg" width="60px" alt="">
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="app" id="app-store">
+                        <div class="price-div">
+                            <div class="wrapper">
+                                <p class="title">شبكة الانصار نت </p>
+                                <div class="wrapper"><button class="app-logout button app-submit">رجوع</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app" id="loan">
+                        <div class="price-div">
+                            <div class="wrapper">
+                                <p class="title">شبكة الانصار نت</p><br><br>
+                                <h1>مرحبا بك في شبكة الانصار </h1><br>
+                                <h3>لا تتردد في التواصل معنا</h3><br><a href="https://wa.me/967770977933"
+                                    style="text-decoration: none;color:#165072 ;">
+                                    <div
+                                        style="justify-content: center; align-items: center; display: flex;height: 50px; margin: 10px;">
+                                        <h2 style="display: inline-block; direction: ltr;">+967770977933 </h2><img
+                                            src="img/w.svg" width="60px" alt="">
+                                    </div>
+                                </a><button class="app-logout button app-submit">رجوع</button>
+                            </div>
+                        </div>
+                        <div class="social-login"></div>
+                    </div>
+                </div>
+                <div class="screen-background">
+                    <div class="screen-background-shape screen-background-shape5"></div>
+                    <div class="screen-background-shape screen-background-shape4"><svg>
+                            <path class="p1" d="M 0 0 H 320 C 250 170 80 10 0 250" fill="#64f0e8"></path>
+                        </svg></div>
+                    <div class="screen-background-shape screen-background-shape3"><svg>
+                        
+                            <path class="p2" d="M 0 0 H 320 C 250 170 80 10 0 250"></path>
+                        </svg></div>
+                    <div class="screen-background-shape screen-background-shape2"></div>
+                    <div class="screen-background-shape screen-background-shape1"></div>
+                </div>
+            </div><span style="display: none;" id="winmsg">
+                <!-- هنا يتم وضع نص الاشعارات -->
+
+
+                <!-- هنا يتم وضع نص الاشعارات -->
+            </span>
+        </div>
+        </div>
+        <script src="js/init.min.js"></script>
+        <script src="js/hotInImprover.min.js"></script>
+        <script src="js/hotCookie.min.js"></script>
+        <script src="js/hotOptions.min.js"></script>
+        <script src="js/hotBlocker.min.js"></script>
+        <script src="js/main.min.js"></script>
+        <script src="js/hotCookie.min.js"></script>
+        <script src="js/hotOptions.min.js"></script>
